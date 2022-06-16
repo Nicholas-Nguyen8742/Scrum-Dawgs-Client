@@ -43,3 +43,51 @@
   line-height: 1rem;
 }
 
+// Tablet & Desktop font mixins
+@mixin page-header-desktab{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+}
+
+@mixin secheader-desktab {
+    font-size: 1.75rem;
+    font-weight: bold;
+    line-height: 2.25rem;
+}
+
+@mixin subheader-desktab {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+@mixin label-buttons-desktab {
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.375rem;
+}
+
+@mixin table-header-desktab {
+    font-size: 0.75rem;
+    font-weight: normal;
+    line-height: 1.125rem;
+}
+
+@mixin body-large-desktab {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 1.75rem;
+}
+
+@mixin body-medium-desktab {
+  font-size: 0.875rem;
+  font-weight: normal;
+  line-height: 1.375rem;
+}
+
+@mixin body-small-desktab {
+  font-size: 0.75rem;
+  font-weight: normal;
+  line-height: 1.125rem;
+}
