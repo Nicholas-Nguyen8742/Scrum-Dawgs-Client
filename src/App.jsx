@@ -1,4 +1,4 @@
-import './App.scss';
+import './styles/App.scss';
 
 
 export default function App() {
@@ -8,5 +8,3 @@ export default function App() {
     </div>
   );
 }
-
-
