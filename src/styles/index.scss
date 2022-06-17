@@ -1,4 +1,6 @@
+@use './partials/mixins' as *;
 @use './partials/typography' as *;
+@use './partials/variables' as *;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -7,4 +9,28 @@
 
 html, body {
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  @include page-header-mobile;
+
+  @include tablet {
+    @include page-header-desktab;
+  }
+}
+
+h2 {
+  @include secheader-mobile;
+
+  @include tablet {
+    @include secheader-desktab;
+  }
+}
+
+h3 {
+  @include subheader-mobile;
+
+  @include tablet {
+    @include subheader-desktab;
+  }
 }
