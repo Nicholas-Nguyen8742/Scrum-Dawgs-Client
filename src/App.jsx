@@ -1,10 +1,17 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 import './styles/App.scss';
 
 
 export default function App() {
   return (
-    <div className="App">
+    <BrowserRouter>
+      <Routes>
+        <div className="App">
 
-    </div>
+        </div>
+        <Route path='/signup' component={SignUpPage}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
