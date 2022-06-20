@@ -7,10 +7,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <div className="App">
-
-        </div>
-        <Route path='/signup' component={SignUpPage}/>
+        <Route path='/signup' element={<SignUpPage />}/>
       </Routes>
     </BrowserRouter>
   );
